@@ -274,7 +274,7 @@
       width: 55%;
       height: 4px;
       transform-origin: 96% 50%;
-      transform: rotate(-32deg);
+      transform: rotate(0deg);
       transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
       z-index: 9;
     }
@@ -884,6 +884,7 @@
     state.isPlaying = false;
     vinyl.classList.remove('spinning');
     tonearm.classList.remove('playing');
+    tonearm.style.transform = '';
     updatePlayIcon();
   }
 
@@ -893,6 +894,7 @@
     state.isPlaying = false;
     vinyl.classList.remove('spinning');
     tonearm.classList.remove('playing');
+    tonearm.style.transform = '';
     progressFill.style.width = '0%';
     updatePlayIcon();
   }
